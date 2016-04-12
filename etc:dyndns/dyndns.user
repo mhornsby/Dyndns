@@ -1,0 +1,3 @@
+# set password for user 1 using htpasswd -c -d /etc/dyndns/dyndns.user user1
+user1:mypassword123
+user2:anotherpassword

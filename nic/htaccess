@@ -1,0 +1,6 @@
+# Don’t show directory listings
+Options -Indexes
+DirectoryIndex update.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

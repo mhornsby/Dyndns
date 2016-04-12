@@ -1,0 +1,28 @@
+{
+    "name": "mhornsby/dyndns",
+    "description": "Linode PHP Dyndns Server",
+    "homepage": "http://github.com/mhornsby/dyndns",
+    "keywords": ["linode", "dyndns"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Hornsby"
+        },
+        {
+            "name":     "Nico Kaiser",
+            "email":    "nico@kaiser.me",
+            "homepage": "http://siriux.net/"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mhornsby"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Dyndns": "src/"
+        }
+    }
+}
