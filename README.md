@@ -10,10 +10,10 @@ Implements a Dyndns compatible server
 
 ##On your Linode
 - go to the DNS manager and create a A/AAA record e.g. home.example.com
-- got go Accounts/Users and Permisions and create a new user https://manager.linode.com/user/edit
+- go to Accounts/Users and Permisions and create a new user https://manager.linode.com/user/edit
 - set the user to a restricted user "Yes - this user can only do what I specify"
-- go to Accounts/Users Edit Permisions and disable all permissions except "DNS Zone Grants" for the domain
-- login the linode as the new user and create an API key using "my profile" "API Keys" https://manager.linode.com/profile/api
+- go to Accounts/Users Edit Permisions and disable all permissions except "DNS Zone Grants" for the domain e.g. example.com
+- login into the linode as the new user and create an API key using "my profile" "API Keys" https://manager.linode.com/profile/api
 
 ##Obtaining your Linode DomainID and Resource ID
 
@@ -57,7 +57,7 @@ sudo cp -r vendor/mhornsby/dyndns/etc:dyndns /etc/dyndns`
 cd /etc/dyndns
 ```
 
-- setup linode.api_key` enter the Linode API key into
+- setup `linode.api_key` enter the Linode API key into
 - setup `linode.resourceid` e.g. home.example.com:your-resource-id
 - setup `linode.domainidid` e.g. *.example.com:your-domainid-id
 - setup `dyndns.host` e.g. *.example.com:user1
@@ -65,7 +65,7 @@ cd /etc/dyndns
 
 ### Testing
 Test your setup with
-` user1:password@example.com/nic/update?hostname=home.example.com&myip=1.2.3.4`
+` http://user1:password@example.com/nic/update?hostname=home.example.com&myip=1.2.3.4`
 
 ### Dyndns Return Codes
 - `good` The update was successful, and the hostname is now updated.
