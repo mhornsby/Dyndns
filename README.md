@@ -1,4 +1,4 @@
-# Linode-PHP-Dydns-Server-
+# Linode PHP Dydns Server
 
 A Dydns server using the Linode API based on the work of 
   - Nico Kaiser https://github.com/nicokaiser/Dyndns 
@@ -87,30 +87,5 @@ Debuging is enabled by default in `nic/update.php` via these two lines
 
 - `hostname` Comma separated list of hostnames that you wish to update (up to 20 hostnames per request). This is a required field. Example: `hostname=dynhost1.yourdomain.tld,dynhost2.yourdomain.tld`
 ` `myip` IP address to set for the update. Defaults to the best IP address the server can determine.
-
-
-
-
-
-  
-  `
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
